@@ -9,7 +9,7 @@ datetime <- paste(subpowerdata$Date, subpowerdata$Time)
 #converting datetime
 newdatetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 #creating png file
-png("Plot2.png", width=600, height=600)
+png("Plot2.png", width=480, height=480)
 #plotting data
 plot(newdatetime, subpowerdata$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 #closing device
