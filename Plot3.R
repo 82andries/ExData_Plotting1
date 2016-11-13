@@ -10,7 +10,7 @@ datetime <- paste(subpowerdata$Date, subpowerdata$Time)
 #convert datetime
 newdatetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 #creating png file
-png("Plot3.png", width=600, height=600)
+png("Plot3.png", width=480, height=480)
 #create plot
 plot(newdatetime, subpowerdata$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
 #adding extra data to plot
