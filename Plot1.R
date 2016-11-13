@@ -4,7 +4,7 @@ subpowerdata <- subset(powerdata, powerdata$Date=="1/2/2007" | powerdata$Date=="
 # Changing the data from factor to numeric
 subpowerdata$Global_active_power <- as.numeric(as.character(subpowerdata$Global_active_power))
 #create png file
-png("Plot1.png", width=600, height=600)
+png("Plot1.png", width=480, height=480)
 # Calling the graph
 hist(subpowerdata$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", 
      main = "Global Active Power")
