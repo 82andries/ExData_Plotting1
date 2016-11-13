@@ -12,7 +12,7 @@ datetime <- paste(subpowerdata$Date, subpowerdata$Time)
 #converting datetime
 newdatetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 #creating png file
-png("Plot4.png", width=600, height=600)
+png("Plot4.png", width=480, height=480)
 #setting graph row and column
 par(mfrow=c(2,2))
 #Plot1
